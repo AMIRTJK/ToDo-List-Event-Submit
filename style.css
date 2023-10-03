@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  padding: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ol {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+button.add-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: 1px solid #00000071;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.1s all;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 8%;
+  left: 50%;
+}
+button.add-modal:hover {
+  background-color: #e7e7e7;
+}
+
+button.add-modal:active {
+  border: 2px solid #000000b1;
+}
+
+.form-add,
+.form-edit {
+  position: fixed;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: rgba(96, 171, 227, 0.722);
+  display: none;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-content input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-content input[type="submit"] {
+  cursor: pointer;
+}
+
+.close-add,
+.close-edit {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+
+.close-add:hover,
+.close-edit:hover {
+  color: #000;
+}
+
+.btn-edit,
+.btn-delete {
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-edit {
+  color: green;
+}
+.btn-delete {
+  color: red;
+}
+
+.line-checked {
+  text-decoration: line-through;
+  color: red;
+}
+
+.form-edit {
+  display: none;
+}

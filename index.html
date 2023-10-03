@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List Training</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper-post">
+        <!-- <ol type="1">
+          <li>Alex</li>
+          <p class="btn-edit">Edit</p>
+          <p class="btn-delete">Delete</p>
+        </ol> -->
+      </div>
+      <button class="add-modal">+</button>
+      <!-- Form Add -->
+      <form class="form-add">
+        <div class="form-content">
+          <h1>REGISTRATION</h1>
+          <input type="text" name="username" placeholder="Введите логин" />
+          <input type="text" name="password" placeholder="Введите пароль" />
+          <input type="submit" value="Добавить" />
+          <span class="close-add">&times;</span>
+        </div>
+      </form>
+      <!-- Form Edit -->
+      <form class="form-edit">
+        <div class="form-content">
+          <h1>EDIT</h1>
+          <input type="text" name="username" />
+          <input type="text" name="password" />
+          <input type="submit" value="Изменить" />
+          <span class="close-edit">&times;</span>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
